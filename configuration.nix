@@ -97,6 +97,7 @@
 
   # Install firefox.
   programs.firefox.enable = true;
+  programs.amnezia-vpn.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -104,6 +105,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
  environment.systemPackages = with pkgs; [
+    amneziawg-go
     parsec-bin
     brave
     calibre
@@ -137,7 +139,6 @@
     curl
     ipset
     iptables
-    amnezia-vpn
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
