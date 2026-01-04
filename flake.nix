@@ -19,7 +19,6 @@
         modules = [
           ./hardware-configuration.nix
           ./configuration.nix
-          /*
           ./modules/hardware/surface.nix
           ./modules/desktop/hyprland.nix
           ./modules/desktop/wayland.nix
@@ -27,7 +26,7 @@
           ./modules/services/audio.nix
           ./modules/services/zapret.nix
           ./modules/users/g.nix
-          */ 
+          
           home-manager.nixosModules.home-manager
           {
             home-manager = {

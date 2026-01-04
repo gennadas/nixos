@@ -2,11 +2,9 @@
 
 {
   imports = [
-    /*
     ./home/programs.nix
     ./home/editor.nix
     ./home/themes.nix
-    */
   ];
 
   home = {
