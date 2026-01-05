@@ -5,6 +5,7 @@
     ./home/programs.nix
     ./home/editor.nix
     ./home/themes.nix
+    ./desktop/waybar.nix
   ];
 
   home = {

@@ -1,14 +1,17 @@
-{ pkgs, lib, ... }:
+{ pkgs, pkgs-stable, lib, ... }:
 
 {
   home.packages = with pkgs; [
+    krita
+    ffmpeg
+    mpvpaper
     neovim
     codeblocks
     obsidian
     brightnessctl
     vscode
-    rofi
     wofi
+    swww
     prismlauncher
     fastfetch
     telegram-desktop
@@ -23,8 +26,9 @@
     ripgrep
     fd
     lazygit
-    fzf
     grim
+    slurp
+    v4l-utils
     (python3.withPackages (python-pkgs: [
       python-pkgs.pandas
       python-pkgs.numpy
@@ -32,9 +36,12 @@
     ]))
     lua
     luajitPackages.luarocks
-    discord
+    pkgs-stable.vesktop
+    wl-clipboard
+    mako
+    glib
+    waybar
   ];
-
   programs.obs-studio = {
     enable = true;
     plugins = with pkgs.obs-studio-plugins; [
