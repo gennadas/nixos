@@ -23,6 +23,9 @@
     curl
     wget
     foot
+    tmux
+    dnsutils
+    traceroute
     tree
     bat
     fzf
@@ -31,8 +34,11 @@
     zapret
     wireguard-go
     wireguard-tools
+    htop
+    
   ];
   programs.steam.enable = true;
+  programs.amnezia-vpn.enable = true;
 
   # Security
   security.polkit.enable = true;
